@@ -4,57 +4,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jay Hari Enterprises | Premium HORECA Food Solutions & Beverages</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Jay Hari Enterprises - Varanasi’s trusted distributor for premium coffee, tea, machines, and authentic food solutions for hospitality businesses.">
+  <meta name="keywords" content="HORECA, Coffee, Tea, Varanasi, Food Distributor, Cafe, Hotel, Restaurant, Beverage Solutions">
+
+  <!-- Google Analytics (replace UA-XXXXXXXXX-X with your real tracking ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXXXXXX-X');
+  </script>
+  <!-- If you prefer Plausible, comment out above and add their script here. -->
+
   <style>
-    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #fafbfc; color: #222; }
-    header { background: #00796b; color: #fff; padding: 40px 20px 20px; text-align: center; }
-    header img { max-width: 200px; margin-bottom: 12px; border-radius: 8px; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin:0; background:#fafbfc; color:#222; scroll-behavior:smooth;}
+    /* Banner & Hero Section */
+    .banner-hero {
+      position:relative; width:100%; max-height:330px; margin:0 auto 0 auto;
+      background:#00796b; overflow:hidden; border-bottom-left-radius:12px; border-bottom-right-radius:12px;
+    }
+    .banner-image {
+      width:100%; height:330px; object-fit:cover; display:block;
+      border-bottom-left-radius:12px; border-bottom-right-radius:12px;
+      filter:brightness(0.78);
+    }
+    .banner-content {
+      position:absolute; top:0; left:0; height:100%; width:50%;
+      display:flex; flex-direction:column; justify-content:center; align-items:flex-start;
+      padding:36px 38px; color:#fff; z-index:2;
+    }
+    .hero-logo {
+      max-width:120px; margin-bottom:18px; box-shadow:0 2px 6px #0004;
+    }
+    .banner-content h1 {
+      font-size:2.2em; margin:0 0 10px 0; color:#fff; letter-spacing:2px; line-height:1.08;
+    }
+    .hero-title {
+      font-size:1.3em; font-weight:600; margin:0 0 8px 0; color:#ffe082; letter-spacing:1px;
+    }
+    .hero-desc {
+      font-size:1.08em; font-weight:normal; color:#ffc; line-height:1.35;
+    }
     nav { background: #004d40; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.2);}
     nav a { color: #ffeb3b; text-decoration: none; padding: 16px 18px; display: inline-block; font-weight: bold; transition: background 0.3s;}
-    nav a:hover { color: #fff; background: #004d40; }
-    section { max-width: 800px; margin: 36px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 3px 10px #0001;}
-    h2 { color: #00796b; margin-top: 0; border-bottom: 2px solid #e0f2f1; padding-bottom: 8px; margin-bottom: 20px;}
-    ul, ol { margin: 0 0 1em 1.5em; padding: 0;}
-    li { margin-bottom: 0.5em; line-height: 1.5;}
-    li b { color: #004d40; margin-right: 5px;}
-    .main-banner { width: 100%; max-height: 250px; object-fit: cover; display: block; margin: 10px 0 0 0; border-radius: 4px; }
-    .product-images { display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; margin-bottom: 20px; }
-    .product-images img { width: 180px; border-radius: 8px; box-shadow: 0 1px 8px #0002; }
-    .product-list { list-style: none; padding: 0; margin: 15px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;}
-    .product-list li { background: #f1f8e9; padding: 10px 15px; border-radius: 4px; font-weight: 500; border-left: 5px solid #004d40;}
-    .highlight-section { background: #e0f2f1;}
-    .portfolio-case { margin-bottom: 1.5em; padding: 15px; border-left: 5px solid #00796b; background: #f7fcfc; border-radius: 4px;}
-    .portfolio-case b { display: block; margin-bottom: 5px; color: #004d40; font-size: 1.1em;}
-    .contact-info { margin: 1.5em 0; line-height: 1.8; }
-    .contact-info a { color: #00796b; font-weight: bold; }
-    .quote-form input, .quote-form textarea { width: 98%; padding: 10px; margin-bottom: 12px; border-radius: 4px; border: 1px solid #ccc; font-size: 1em; font-family: inherit;}
-    .quote-form button { background: #ff9800; color: #fff; border: none; font-size: 1rem; padding: 12px 30px; border-radius: 5px; cursor: pointer; transition: background 0.2s; font-weight: bold;}
-    .quote-form button:hover { background: #f57c00; }
-    footer { border-top: 1px solid #eee; color: #00796b; }
-    @media (max-width: 680px) {
-      section { margin: 18px 6px; padding: 15px;}
-      header { padding: 20px 10px 10px;}
-      nav a { padding: 12px 10px; font-size: 0.9em;}
-      .product-list { grid-template-columns: 1fr;}
-      .product-images img { width: 100%; }
-      .product-images { flex-direction: column; align-items: center; }
+    nav a:hover { color: #fff; background: #004d40;}
+    section { max-width: 900px; margin: 36px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 3px 10px #0001;}
+    h2 { color: #00796b; margin-top:0; border-bottom:2px solid #e0f2f1; padding-bottom:8px; margin-bottom:20px;}
+    h3 { color:#004d40; margin:18px 0 8px;}
+    ul, ol { margin:0 0 1em 1.5em; padding:0;}
+    li { margin-bottom:0.5em; line-height:1.5;}
+    li b { color:#004d40; margin-right:5px;}
+    .gallery-products { display:flex; flex-wrap:wrap; gap:32px; justify-content:center; margin-bottom:30px;}
+    .gallery-products .item { background:#f6fff6; padding:16px 12px; border-radius:8px; width:260px; box-shadow:0 2px 7px #0001; text-align:center;}
+    .gallery-products img { width:200px; border-radius:8px; margin-bottom:10px; box-shadow:0 2px 6px #0002;}
+    .product-list {list-style:none; padding:0; margin:15px 0; display:grid; grid-template-columns:1fr 1fr; gap:10px;}
+    .product-list li { background:#f1f8e9; padding:10px 15px; border-radius:4px; font-weight:500; border-left:5px solid #004d40;}
+    .highlight-section { background:#e0f2f1;}
+    .portfolio-case { margin-bottom:1.5em; padding:15px; border-left:5px solid #00796b; background:#f7fcfc; border-radius:4px;}
+    .portfolio-case b { display:block; margin-bottom:5px; color:#004d40; font-size:1.1em;}
+    .contact-info { margin:1.5em 0; line-height:1.8;}
+    .contact-info a { color: #00796b; font-weight: bold;}
+    .quote-form input, .quote-form textarea { width:98%; padding:10px; margin-bottom:12px; border-radius:4px; border:1px solid #ccc; font-size:1em; font-family:inherit;}
+    .quote-form button { background:#ff9800; color:#fff; border:none; font-size:1rem; padding:12px 30px; border-radius:5px; cursor:pointer; transition:background 0.2s; font-weight:bold;}
+    .quote-form button:hover { background: #f57c00;}
+    footer { border-top: 1px solid #eee; color: #00796b;}
+    #backtotop { position:fixed; bottom:30px; right:30px; padding:12px 18px; background:#00796b; color:#fff; border:none; border-radius:18px; cursor:pointer; z-index:999;}
+    @media (max-width:680px) {
+      .banner-content { width:90%; padding:14px 10px;}
+      .banner-hero, .banner-image { height:190px; border-radius:0 0 10px 10px; }
+      .hero-logo { max-width:68px; }
+      .banner-content h1 { font-size:1.04em;}
+      .hero-title { font-size:1em;}
+      .hero-desc { font-size:0.95em;}
+      section { margin:18px 6px; padding:15px;}
+      nav a { padding:12px 10px; font-size:0.9em;}
+      .product-list { grid-template-columns:1fr;}
+      .gallery-products { flex-direction:column; align-items:center;}
+      .gallery-products .item { width:95%;}
+      .gallery-products img { width:90%;}
     }
   </style>
 </head>
 <body>
-  <header>
-    <!-- Logo at top -->
-    <img src="Logo.png" alt="Jay Hari Enterprises Logo" />
-    <h1>Jay Hari Enterprises</h1>
-    <p>Premium HORECA Food Solutions & Beverages<br>
-      Varanasi’s trusted distributor for coffee, tea, machines, and authentic food products</p>
-  </header>
-
-  <!-- Banner below header -->
-  <img class="main-banner" src="Banner.png" alt="Jay Hari Enterprises Banner">
+  <!-- HERO BANNER WITH OVERLAYED LOGO + TEXT -->
+  <div class="banner-hero">
+    <img src="Banner.png" alt="Main Banner" class="banner-image">
+    <div class="banner-content">
+      <img src="Logo.png" alt="Jay Hari Enterprises Logo" class="hero-logo" />
+      <h1>Jay Hari Enterprises</h1>
+      <p class="hero-title">Premium HORECA Food Solutions & Beverages</p>
+      <p class="hero-desc">Varanasi’s trusted distributor for coffee, tea, machines, and authentic food products.</p>
+    </div>
+  </div>
 
   <nav>
     <a href="#about">About</a>
     <a href="#products">Products</a>
+    <a href="#gallery">Gallery</a>
     <a href="#why-us">Why Choose Us</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
@@ -69,10 +117,19 @@
   
   <section id="products">
     <h2>☕️ Our Premium Products & Menu</h2>
-    <!-- Product images gallery -->
-    <div class="product-images">
-      <img src="Authentic Food Product Selection.png" alt="Authentic Food Product Selection">
-      <img src="Diverse Range of HORECA Offerings.png" alt="Diverse Range of HORECA Offerings">
+    <div class="gallery-products">
+      <!-- PRODUCT IMAGE 1 -->
+      <div class="item">
+        <img src="Authentic Food Product Selection.png" alt="Authentic Food Product Selection" />
+        <h3>Authentic Food Product Selection</h3>
+        <p>Ready-to-use tortillas, tacos, and more for hotels, restaurants, and cafés.</p>
+      </div>
+      <!-- PRODUCT IMAGE 2 -->
+      <div class="item">
+        <img src="Diverse Range of HORECA Offerings.png" alt="Diverse Range of HORECA Offerings" />
+        <h3>Diverse Range of HORECA Offerings</h3>
+        <p>A complete portfolio of coffee, tea, and snacks to elevate hospitality.</p>
+      </div>
     </div>
     <h3>Beverage Solutions (Coffee & Tea Premixes)</h3>
     <ul class="product-list">
@@ -100,6 +157,20 @@
         <button class="quote-form button" style="padding: 15px 40px;">Request Our Full Product Catalogue</button>
       </a>
     </p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-products">
+      <div class="item">
+        <img src="Authentic Food Product Selection.png" alt="Authentic Food Product Selection">
+        <p>Food Product Showcase</p>
+      </div>
+      <div class="item">
+        <img src="Diverse Range of HORECA Offerings.png" alt="Diverse Range of HORECA Offerings">
+        <p>Our HORECA Range</p>
+      </div>
+    </div>
   </section>
 
   <section id="why-us" class="highlight-section">
@@ -153,18 +224,30 @@
     <p style="font-weight: bold;">
       Call us at <a href="tel:+919120000918">+91 91200 00918</a> or Email us at <a href="mailto:jhentervns@gmail.com">jhentervns@gmail.com</a>
     </p>
-    <form class="quote-form" name="quote" method="POST" netlify>
+    <!-- Formspree Contact Form (replace form ID after /f/) -->
+    <form action="https://formspree.io/f/yourformid" method="POST" class="quote-form">
       <input type="text" name="name" required placeholder="Your Name">
       <input type="tel" name="phone" required placeholder="Your Phone Number">
       <input type="email" name="email" required placeholder="Your Email">
       <textarea name="message" required placeholder="Tell us your requirements..." rows="4"></textarea>
       <button type="submit">Send Quote Request</button>
     </form>
-    <small style="color: #666;">*This form requires Netlify or similar for submissions. For email submissions, a 3rd party like Formspree or Google Forms is needed; otherwise, use the contact details above.</small>
+    <small style="color: #666;">*This form uses Formspree and delivers messages to your registered email address.</small>
   </section>
   
   <footer style="text-align:center; padding:16px 0; color: #00796b;">
-    &copy; 2025 Jay Hari Enterprises. Designed with GitHub Pages.
+    &copy; 2025 Jay Hari Enterprises. Designed for free with GitHub Pages.
   </footer>
+  <!-- Smooth Scrolling JS -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.onclick = function(e){
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      };
+    });
+  </script>
+  <!-- Back-to-Top Button -->
+  <button id="backtotop" onclick="window.scrollTo({top:0,behavior:'smooth'});">↑ Back to Top</button>
 </body>
 </html>
